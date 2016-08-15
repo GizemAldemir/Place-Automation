@@ -1,0 +1,31 @@
+<%= form_for @place do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: 'name' %><br>
+    <br>
+    <%= f.label :adress %>
+    <%= f.text_area :adress, placeholder: 'adress', rows: 3 %><br>
+    <br>
+    <%= f.label :established_at%>
+    <%= f.date_select :established_at, placeholder: 'date' %>
+    <br>
+    <%= f.label :phone_number%>
+    <%= f.text_field :phone_number, placeholder: 'phone_number' %><br>
+    <br>
+    <%= f.label :contact_mail%>
+    <%= f.text_field :contact_mail, placeholder: 'contact_mail' %><br>
+    <br>
+    <%= f.label :city%>
+    <%= f.text_field :city, placeholder: 'city' %><br>
+    <br>
+    <%= f.label :description%>
+    <%= f.text_area :description, placeholder: 'description' %><br>
+    <br>
+
+    <%= f.select :category_id, @categories %>
+
+    <br />
+    <br />
+    <br />
+
+    <%= f.submit 'Gonder' %>
+<% end %>

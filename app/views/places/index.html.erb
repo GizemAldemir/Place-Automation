@@ -1,0 +1,6 @@
+<% @places.each do |place| %>
+    <b>ID </b><%= place.id %>
+    <b>Name </b>
+    <%= link_to place.name, place_path(place) %>
+    <b>Description </b><%= place.description %><br>
+<% end %>

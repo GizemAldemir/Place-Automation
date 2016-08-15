@@ -1,0 +1,9 @@
+<h1>Create a new Place</h1>
+
+<% if @place.errors.any? %>
+    <h3>
+      <%= @place.errors.full_messages.join(", ") %>  <%#join ile hata mesajındaki stringleri virgül ile ayırıyor%>
+    </h3>
+<% end %>
+
+<%= render "form" %>

@@ -1,0 +1,13 @@
+Display Idea<br /><br />
+
+<b>ID:  </b><%= @place.id%><br />
+<b>Name:  </b><%= @place.name %><br />
+<b>Description:  </b><%= @place.description %><br />
+<b>Category: </b><%= @place.category.name %>
+
+<br/><br/>
+<%= link_to "Back to place list", places_path()%>
+<br/>
+<%= link_to "Edit place", edit_place_path(@place) %>
+<br/>
+<%= link_to "Sil", place_path(@place), method: :delete %>
